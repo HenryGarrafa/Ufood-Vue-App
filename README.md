@@ -1,46 +1,99 @@
-# vue-starter
+# 🍽️ UFood – Restaurant Finder App
 
-Kit de départ préconfiguré utilisant [create-vue](https://github.com/vuejs/create-vue/), [ESLint](https://eslint.org/) avec [Prettier](https://prettier.io/) et [Vitest](https://vitest.dev/).
+A Vue.js application developed as part of the **GLO-3102 Web Application Development** course at Université Laval.  
+This app allows users to explore restaurants, manage favorites, log visits, and connect with other users.  
 
-## Prérequis
+---
 
-- Git [Windows](http://www.git-scm.com/book/en/Getting-Started-Installing-Git#Installing-on-Windows), [Mac](http://www.git-scm.com/book/en/Getting-Started-Installing-Git#Installing-on-Mac), [Linux](http://www.git-scm.com/book/en/Getting-Started-Installing-Git#Installing-on-Linux)
-- [Node.js](https://nodejs.org/en/) (version LTS recommandée)
+## 🚀 Getting Started
 
-Vérifier que Node est installé avec la commande:
-
+### 1. Clone the repository
 ```bash
-node -v
-```
-
-Vérifier que Node est installé avec la commande:
-
-```bash
-npm -v
-```
-
-## Installation
-
-```bash
+git clone https://github.com/HenryGarrafa/UFood-Vue-App.git
+cd UFood-Vue-App
+2. Install dependencies
+bash
+Copier le code
 npm install
-```
-
-## Développement
-
-```bash
+3. Run the development server
+bash
+Copier le code
 npm run dev
-```
+The app will start on http://localhost:5173 by default.
+⚠️ If port 5173 is busy, Vite will automatically use another port (e.g., 5174, 5175). Check your terminal output for the exact address.
 
-## Livrable 1
+🧭 Main Features
+🔹 Home Page /
+Dynamic list of restaurants.
 
-Faites vos modifications aux fichiers `Home.vue`, `Navigation.vue`, `Restaurant.vue` et `User.vue`. Ajoutez votre HTML dans la balise `<template>` et votre CSS dans la balise `<style>` de chacun des components. Vous pouvez également modifier la structure de fichiers si vous désirez.
+Add/remove restaurants from favorites.
 
-## Livrable 2-3
+Mark restaurants as visited with comment, rating, and date.
 
-Libre à vous de modifier la structure des fichiers.
+Autocomplete search bar for quick filtering.
 
-## Notes
+Filters: cuisine type, price range, sorting options.
 
-### ESLint
+Switch between list view and map view.
 
-ESLint est configuré afin de respecter un certain standard de code à travers votre équipe. Il est basé sur la configuration de Prettier. qui rassemble les règles de base populaires. Libre à vous de modifier cette configuration.
+🔹 Restaurant Page /restaurant/:id
+View detailed restaurant info.
+
+Add favorites and log visits.
+
+View similar restaurant suggestions.
+
+Display route on map + open in Google Maps.
+
+Carousel for restaurant images.
+
+🔹 User Profile /user or /user/:id
+View visits, favorites, followers, and following.
+
+Create, edit, or delete favorite lists.
+
+Filter restaurants and visits (by type, price, rating, or date).
+
+Follow/unfollow other users.
+
+🔹 Users Page /users
+Search for users with autocomplete.
+
+View profiles, follow/unfollow options.
+
+🔹 Login Page /login
+Create a new account (name, email, password).
+
+Login with existing account.
+
+Demo credentials:
+
+Email: courriel@gmail.com
+
+Password: test01
+
+📂 Project Structure
+csharp
+Copier le code
+UFood-Vue-App/
+├── public/              # Static assets
+├── src/                 # Main source code
+│   ├── components/      # Vue components
+│   ├── pages/           # App pages
+│   └── assets/          # Images, styles
+├── package.json         # Dependencies & scripts
+├── vite.config.js       # Vite configuration
+└── README.md            # Documentation
+⚡ Technologies Used
+Vue.js 3 (Frontend framework)
+
+Vite (Build tool & dev server)
+
+JavaScript (ES6+)
+
+Node.js (Runtime for development)
+
+📝 Notes
+Requires Node.js installed on your system.
+
+Recommended browser: Google Chrome.
