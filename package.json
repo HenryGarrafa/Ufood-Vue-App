@@ -1,0 +1,52 @@
+{
+  "name": "vue-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "postinstall": "npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/",
+    "pre-commit": "lint-staged --allow-empty",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "axios": "^1.8.2",
+    "js-cookie": "^3.0.5",
+    "pinia": "^3.0.1",
+    "vue": "^3.5.13",
+    "vue-multiselect": "^3.2.0",
+    "vue-router": "^4.5.0",
+    "vue3-google-map": "^0.21.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitest/eslint-plugin": "1.1.23",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.3.3",
+    "vite": "^6.0.5",
+    "vite-plugin-vue-devtools": "^7.6.8",
+    "vitest": "^2.1.8"
+  },
+  "lint-staged": {
+    "**/*.*": [
+      "eslint --fix",
+      "prettier --write src/"
+    ]
+  }
+}
