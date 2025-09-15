@@ -12,18 +12,20 @@ This app allows users to explore restaurants, manage favorites, log visits, and 
 git clone https://github.com/HenryGarrafa/UFood-Vue-App.git
 cd UFood-Vue-App
 2. Install dependencies
-bash
-Copier le code
 npm install
+
 3. Run the development server
-bash
-Copier le code
 npm run dev
-The app will start on http://localhost:5173 by default.
-⚠️ If port 5173 is busy, Vite will automatically use another port (e.g., 5174, 5175). Check your terminal output for the exact address.
+
+
+The app will start on http://localhost:5173
+ by default.
+⚠️ If port 5173 is busy, Vite will automatically use another port (e.g., 5174, 5175).
+Check your terminal output for the exact address.
 
 🧭 Main Features
 🔹 Home Page /
+
 Dynamic list of restaurants.
 
 Add/remove restaurants from favorites.
@@ -37,6 +39,7 @@ Filters: cuisine type, price range, sorting options.
 Switch between list view and map view.
 
 🔹 Restaurant Page /restaurant/:id
+
 View detailed restaurant info.
 
 Add favorites and log visits.
@@ -48,6 +51,7 @@ Display route on map + open in Google Maps.
 Carousel for restaurant images.
 
 🔹 User Profile /user or /user/:id
+
 View visits, favorites, followers, and following.
 
 Create, edit, or delete favorite lists.
@@ -57,11 +61,13 @@ Filter restaurants and visits (by type, price, rating, or date).
 Follow/unfollow other users.
 
 🔹 Users Page /users
+
 Search for users with autocomplete.
 
 View profiles, follow/unfollow options.
 
 🔹 Login Page /login
+
 Create a new account (name, email, password).
 
 Login with existing account.
@@ -72,9 +78,8 @@ Email: courriel@gmail.com
 
 Password: test01
 
+
 📂 Project Structure
-csharp
-Copier le code
 UFood-Vue-App/
 ├── public/              # Static assets
 ├── src/                 # Main source code
@@ -84,16 +89,23 @@ UFood-Vue-App/
 ├── package.json         # Dependencies & scripts
 ├── vite.config.js       # Vite configuration
 └── README.md            # Documentation
-⚡ Technologies Used
-Vue.js 3 (Frontend framework)
 
-Vite (Build tool & dev server)
+
+⚡ Technologies Used
+
+Vue.js 3
+ (Frontend framework)
+
+Vite
+ (Build tool & dev server)
 
 JavaScript (ES6+)
 
-Node.js (Runtime for development)
+Node.js
+ (Runtime for development)
 
 📝 Notes
+
 Requires Node.js installed on your system.
 
 Recommended browser: Google Chrome.
